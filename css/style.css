@@ -50,21 +50,27 @@ nav {
   justify-content: space-between;
 }
 
+/* Menu Inline */
 .menu-inline {
   list-style: none;
   display: flex;
   align-items: center;
 }
 
-.list1 li:not(:last-child) {
+.menu-inline li {
+  position: relative;
+}
+
+
+.list1 > li:not(:last-child) {
   margin-right: 24px;
 }
 
-.list2 li:not(:last-child) {
+.list2 > li:not(:last-child) {
   margin-right: 32px;
 }
 
-.list2 li:nth-last-child(2) {
+.list2 > li:nth-last-child(2) {
   margin-right: 12px;
 }
 
@@ -97,4 +103,33 @@ nav .menu-inline a.btn {
 
 nav .menu-inline a.btn:hover {
   background: rgb(210, 0, 126);
+}
+
+/* Menu Block */
+.menu-block {
+  list-style: none;
+  position: absolute;
+  margin-top: 12px;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+  white-space: nowrap;
+}
+
+.menu-block li {
+  padding: 16px 32px;
+}
+
+.menu-block li a:link {
+  display: block;
+}
+
+.menu-block li a span {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(235, 0, 141);
+  vertical-align: super;
+  position: relative;
+  bottom: 3px;
 }
