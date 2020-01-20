@@ -31,7 +31,7 @@ body {
   font-family: 'Font Awesome 5 Free';
   font-weight: 800;
   font-size: 9px;
-  margin-left: 4px;
+  margin-left: 8px;
   vertical-align: middle;
 }
 
@@ -64,6 +64,10 @@ nav {
   margin-right: 32px;
 }
 
+.list2 li:nth-last-child(2) {
+  margin-right: 12px;
+}
+
 a.logo img {
   height: 28px;
   margin-right: 16px;
@@ -79,4 +83,18 @@ nav .menu-inline a:focus {
 nav .menu-inline a.active,
 nav .menu-inline a:hover {
   color: rgb(25,28,31);
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Button */
+
+nav .menu-inline a.btn {
+  background: rgb(235, 0, 141);
+  padding: 10px 24px;
+  border-radius: 24px;
+  color: #fff;
+}
+
+nav .menu-inline a.btn:hover {
+  background: rgb(210, 0, 126);
 }
