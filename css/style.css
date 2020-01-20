@@ -115,6 +115,7 @@ nav .menu-inline a.btn:hover {
   transform: translate(-50%);
   box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
   white-space: nowrap;
+  display: none;
 }
 
 .menu-block li {
