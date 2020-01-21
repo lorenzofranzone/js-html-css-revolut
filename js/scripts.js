@@ -3,14 +3,14 @@ $(document).ready(function(){
   // Code
 
   // Identifico il link contenente un sotto menu
-  $('ul.menu-inline > li > a.sub').mouseenter(
+  $('ul.menu-inline > li.sub').mouseenter(
     function() {
-      $(this).next().show();
+      $(this).children('.menu-block').show();
     }
   );
-  $('ul.menu-inline > li > a.sub').mouseleave(
+  $('ul.menu-inline > li.sub').mouseleave(
     function() {
-      $(this).next().hide();
+      $(this).children('.menu-block').hide();
     }
   );
 
